@@ -125,11 +125,11 @@ There are buttons for it at the top of the right pane. Let's engage them.
 <span class="devtools" style="background-position:-7px -76px"></span> -- continue the execution, hotkey `key:F8`.
 : Resumes the execution. If there are no additional breakpoints, then the execution just continues and the debugger looses the control.
 
-    Here's what we can see after a click on it:
+Here's what we can see after a click on it:
 
-    ![](chrome-sources-debugger-trace-1.png)
+![](chrome-sources-debugger-trace-1.png)
 
-    The execution has resumed, reached another breakpoint inside `say()` and paused there. Take a look at the "Call stack" at the right. It has increased by one more call. We're inside `say()` now.
+The execution has resumed, reached another breakpoint inside `say()` and paused there. Take a look at the "Call stack" at the right. It has increased by one more call. We're inside `say()` now.
 
 <span class="devtools" style="background-position:-137px -76px"></span> -- make a step (run the next command), but *don't go into the function*, hotkey `key:F10`.
 : If we click it now, `alert` will be shown. The important thing is that `alert` can be any function, the execution "steps over it", skipping the function internals.
